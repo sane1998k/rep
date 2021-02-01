@@ -1,0 +1,55 @@
+.button {
+  background-color: #000;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Roboto";
+  font-weight: 700;
+  margin-top: 10px;
+}
+
+.on::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 5px;
+  width: 60%;
+  left: 24px;
+  background-color: purple;
+}
+
+.web {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  height: 100%;
+}
+
+.web-right {
+  flex: 80%;
+}
+
+.web-left {
+  flex: 20%;
+  background-color: #000;
+}
+
+.web-left-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.web-left-body-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.web-left-body__title {
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 14px;
+}

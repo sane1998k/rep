@@ -1,0 +1,195 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.button {
+  background-color: #000;
+  color: #fff;
+  font-size: 40px;
+  font-family: "Roboto";
+  font-weight: 300;
+  margin-top: 10px;
+}
+
+.on {
+  font-weight: 500;
+}
+
+.on::after {
+  content: "";
+  display: block;
+  position: relative;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  background-color: purple;
+}
+
+.web {
+  display: flex;
+  flex-direction: row;
+  min-width: 100%;
+  height: 100%;
+}
+
+.web-right {
+  flex: 80%;
+}
+
+.web-left {
+  flex: 20%;
+  background-color: #000;
+}
+
+.web-left-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.web-left-body-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.web-left-body__title {
+  color: #fff;
+  font-family: "Roboto";
+  font-weight: 200;
+  font-size: 14px;
+}
+
+.action-graph {
+  display: none;
+}
+
+.action-contacts {
+  display: none;
+}
+
+.action-contacts {
+  height: 100%;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-family: "Roboto";
+  font-weight: 300;
+  font-size: 30px;
+}
+
+p {
+  font-family: "Roboto";
+  font-weight: 500;
+}
+
+a {
+  color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: purple;
+}
+
+.contact-numbers {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-numbers .contact-numbers__body {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-email {
+  margin-bottom: 20px;
+}
+
+.contact-row {
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper {
+  min-width: 100%;
+  height: 100%;
+  overflow: hidden;
+}

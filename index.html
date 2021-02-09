@@ -6,6 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<link rel="stylesheet" href="../css/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+	<link rel="stylesheet" href="../css/jquery.dataTables.min.css">
+	<script src="../js/jquery-3.5.1.js"></script>
+
 </head>
 
 <body>
@@ -29,7 +33,17 @@
    </div>
    <div class="web-right">
 <div class="action-report">
-   first
+   <div class="action-report__table">
+      <div class="action-report__tools">
+         <div class="tool-date-from"><input type="datetime-local" id="from" name="from" placeholder="q"></div>
+         <div class="tool-date-to"><input type="datetime-local" id="to" name="to" placeholder="q"></div>
+
+         <div class="tool-button"><button id="search-report" class="buttons">Найти</button></div>
+         <span></span>
+      </div>
+      <!-- <table id="DataTable" class="display" style="width: 100%;"></table> -->
+   </div>
+
 </div>
 
 <div class="action-graph">
@@ -40,7 +54,7 @@
    <div class="contact">
       <div class="contact-row">
          <div class="contact-numbers">
-            <p>Телефон/Факс::</p>
+            <p>Телефон/Факс:</p>
             <div class="contact-numbers__body">
                <a href="tel:88453795753">8 (8453) 79-57–53</a>
                <a href="tel:88453795229">8 (8453) 79-52-29</a>
@@ -63,7 +77,9 @@
    </div>
 </div>   </div>
 </div>	</div>
+	<script src="../js/jquery.dataTables.min.js"></script>
 	<script src="../js/main.js"></script>
+
 </body>
 
 </html>

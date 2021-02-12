@@ -40,8 +40,10 @@
 <div class="action-report">
    <div class="action-report__table">
       <div class="action-report__tools">
-         <div class="tool-date-from"><input type="datetime-local" id="from" name="from" placeholder="q"></div>
-         <div class="tool-date-to"><input type="datetime-local" id="to" name="to" placeholder="q"></div>
+         <div class="tool-date-from"><input type="datetime-local" class="date-form" id="from" name="from"
+               placeholder="q"></div>
+         <div class="tool-date-to"><input type="datetime-local" class="date-form" id="to" name="to" placeholder="q">
+         </div>
 
          <div class="tool-button"><button id="search-report" class="buttons">Найти</button></div>
          <span></span>
@@ -54,11 +56,18 @@
 <div class="action-graph">
    <div class="action-graph__table">
       <div class="action-graph__tools">
-         <div class="tool-date-from"><input type="datetime-local" id="from" name="from" placeholder="q"></div>
-         <div class="tool-date-to"><input type="datetime-local" id="to" name="to" placeholder="q"></div>
+         <div class="tools">
+            <div class="tool-date-from"><input type="datetime-local" class="date-form" id="from2" name="from2"
+                  placeholder="q"></div>
+            <div class="tool-date-to"><input type="datetime-local" class="date-form" id="to2" name="to2"
+                  placeholder="q">
+            </div>
 
-         <div class="tool-button"><button id="search-graph" class="buttons">Найти</button></div>
-         <div id="container"></div>
+            <div class="tool-button"><button id="search-graph" class="buttons">Найти</button></div>
+         </div>
+         <div class="cont">
+            <div id="container"></div>
+         </div>
       </div>
 
    </div>

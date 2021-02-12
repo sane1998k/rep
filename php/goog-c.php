@@ -8,7 +8,7 @@ if (!$link) {
     printf("Connect failed: %s\n", mysqli_connect_error());
     exit();
 }
-if ($result = mysqli_query($link, "SELECT * FROM Report")) {
+if ($result = mysqli_query($link, "SELECT * FROM Report WHERE dateStart BETWEEN '".$_GET['dateFrom']."' AND '".$_GET['dateTo']."'")) {
    $sub_array = array();
    while( $row = mysqli_fetch_assoc( $result ) ) { 
       $dt   = new DateTime($row['dateStart']);

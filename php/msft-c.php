@@ -3,18 +3,18 @@
 
 
 header('Content-Type: application/json');
-$link = mysqli_connect("localhost", "root", "root", "rep");
+include('db.php');
 //"SELECT * FROM glav WHERE dat BETWEEN '".$_POST['start_date']." 00:00:00' AND '".$_POST['end_date']." 23:59:59'";
 /* check connection */ 
 if (!$link) {
     printf("Connect failed: %s\n", mysqli_connect_error());
     exit();
 }
-if ($result = mysqli_query($link, "SELECT * FROM Report WHERE dateStart BETWEEN '".$_GET['dateFrom']."' AND '".$_GET['dateTo']."'")) {
+if ($result = mysqli_query($link, "SELECT * FROM dozator3 WHERE dateStart BETWEEN '".$_GET['dateFrom']."' AND '".$_GET['dateTo']."'")) {
    $sub_array = array();
    while( $row = mysqli_fetch_assoc( $result ) ) { 
       $dt   = new DateTime($row['dateStart']);
-      array_push($sub_array, [date_timestamp_get($dt) * 1000, (float) $row['dosatorSum1']]);
+      array_push($sub_array, [date_timestamp_get($dt) * 1000, (float) $row['number']]);
    }
    $userData = $sub_array;
         $data = $userData;

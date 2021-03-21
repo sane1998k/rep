@@ -1,7 +1,7 @@
 <?php
 
 
-$link = mysqli_connect("localhost", "root", "root", "rep");
+include('db.php');
 //"SELECT * FROM glav WHERE dat BETWEEN '".$_POST['start_date']." 00:00:00' AND '".$_POST['end_date']." 23:59:59'";
 /* check connection */ 
 if (!$link) {

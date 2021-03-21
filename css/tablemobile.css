@@ -1,0 +1,96 @@
+@media only screen and (max-width: 992px) {
+  .nameee {
+    margin: 0;
+    font-weight: 700;
+  }
+
+  p {
+    font-size: 30px;
+  }
+
+  input[type=date], input[type=button], select {
+    width: 100%;
+    height: 70px;
+    font-size: 30px;
+  }
+
+  input[type=date] {
+    background-color: #fff;
+    text-align: center;
+  }
+
+  th {
+    content: "";
+  }
+
+  /* Force table to not be like tables anymore */
+  thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr {
+    border: 1px solid #ccc;
+  }
+
+  td {
+    min-height: 3%;
+    font-size: 16px;
+    border: none;
+    border-bottom: 1px solid #eee;
+    text-align: right;
+  }
+
+  td:before {
+    float: left;
+    padding-right: 10px;
+    font-weight: 700;
+  }
+
+  /* Label the data */
+  td:nth-of-type(1):before {
+    content: "dat";
+    text-transform: uppercase;
+  }
+
+  td:nth-of-type(2):before {
+    content: "dose";
+    text-transform: uppercase;
+  }
+
+  td:nth-of-type(3):before {
+    content: "tare";
+    text-transform: uppercase;
+  }
+
+  td:nth-of-type(4):before {
+    content: "weight";
+    text-transform: uppercase;
+  }
+
+  td:nth-of-type(5):before {
+    content: "remainder";
+    text-transform: uppercase;
+  }
+
+  td:nth-of-type(6):before {
+    content: "price";
+    text-transform: uppercase;
+  }
+
+  td:nth-of-type(7):before {
+    content: "client";
+    text-transform: uppercase;
+  }
+
+  td:nth-of-type(8):before {
+    content: "cylinderNumber";
+    text-transform: uppercase;
+  }
+}
